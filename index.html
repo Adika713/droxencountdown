@@ -211,7 +211,7 @@
 
       React.useEffect(() => {
         // Replace with your Render WebSocket server URL after deployment
-        ws.current = new WebSocket('wss://your-websocket-service.onrender.com');
+        ws.current = new WebSocket('https://websocket-ccfj.onrender.com');
         ws.current.onopen = () => setWsStatus('Kapcsolódva');
         ws.current.onmessage = (event) => {
           try {
